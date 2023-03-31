@@ -21,14 +21,14 @@
       <section
         class="w-screen px-8 pt-[50px] lg:p-[50px] lg:w-[30%] lg:pt-[200px]"
       >
-        <h2 class="text-3xl text-center text-bold">
+        <h2 class="text-3xl text-center lg:text-left text-bold">
           <span class="text-red-600">Login</span>
           to continue.
         </h2>
         <form action="login" method="post" class="flex flex-col max-w-[385px]">
           <!-- form max w 375-->
           <div class="flex flex-col placeholder:text-grey-200mt-5">
-            <label for="email" class="text-center">Email</label>
+            <label for="email" class="text-center lg:text-left">Email</label>
             <input
               type="email"
               name="email"
@@ -38,7 +38,9 @@
             />
           </div>
           <div class="flex flex-col mt-5">
-            <label for="password" class="text-center">Password</label>
+            <label for="password" class="text-center lg:text-left"
+              >Password</label
+            >
             <input
               type="password"
               name="password"
@@ -62,7 +64,7 @@
         <img
           src="./assets/man-593333_1920.jpg"
           alt="picture"
-          class="relative object-cover h-[203px] lg:h-screen w-screen"
+          class="relative object-cover h-[203px] lg:h-screen w-screen mix-blend-overlay slate-600"
         />
         <div class="absolute top-0 flex flex-col p-5 lg:p-[50px]">
           <div>
