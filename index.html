@@ -17,7 +17,9 @@
     <title>Login Page</title>
   </head>
   <body>
-    <main class="flex flex-col-reverse max-w-screen lg:flex-row">
+    <main
+      class="flex flex-col-reverse max-w-screen lg:flex-row h-screen overflow-hidden"
+    >
       <section
         class="w-screen px-8 pt-[50px] lg:p-[50px] lg:w-[30%] lg:pt-[200px]"
       >
@@ -66,12 +68,12 @@
           alt="picture"
           class="relative object-cover h-[203px] lg:h-screen w-screen mix-blend-overlay slate-600"
         />
-        <div class="absolute top-0 flex flex-col p-5 lg:p-[50px]">
-          <div>
+        <div class="relativetop-0 flex flex-col p-5 lg:p-[50px] lg:h-screen">
+          <div class="absolute top-10">
             <h1 class="text-3xl lg:text-8xl text-red-600">BNI</h1>
             <p class="text-white text-2xl lg:text-4xl">Talent</p>
           </div>
-          <div class="bottom-0">
+          <div class="absolute w-full bottom-10">
             <p class="text-white text-xl lg:text-5xl text-bold">
               Bni le leader mondiale du réseautage
             </p>
@@ -79,6 +81,5 @@
         </div>
       </section>
     </main>
-    <a href="./pages/dashboard.html">Dashboard</a>
   </body>
 </html>
