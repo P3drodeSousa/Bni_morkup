@@ -18,11 +18,11 @@
   </head>
   <body>
     <main class="flex h-screen">
-      <section class="w-[20%] border flex-col flex flex-1">
-        <div>
+      <section class="w-[20%] border">
+        <div class="px-5 py-5 flex-col flex gap-10">
           <div>
-            <h1>BNI</h1>
-            <p>Talent</p>
+            <h1 class="text-red-600 text-5xl">BNI</h1>
+            <p class="text-2xl">Talent</p>
           </div>
           <div>
             <ul>
@@ -39,15 +39,90 @@
         </div>
       </section>
       <section class="w-[80%]">
-        <div class="border p-5">
+        <div class="border-b p-5 flex gap-10 items-center">
           <h2>Dashboard</h2>
           <form action="search">
-            <input type="text" name="" id="" /><button type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="rounded-full border"
+            /><button type="submit">search</button>
           </form>
         </div>
-        <div class="p-5">window</div>
+        <div class="p-5">
+          <div class="flex justify-between">
+            <div>
+              <ul class="flex gap-4">
+                <li
+                  class="border rounded-full hover:bg-red-600 hover:text-white hover:border-white py-1 px-5 border-red-600 text-red-600"
+                >
+                  filter1
+                </li>
+                <li
+                  class="border rounded-full hover:bg-red-600 hover:text-white hover:border-white py-1 px-5 border-red-600 text-red-600"
+                >
+                  filter2
+                </li>
+                <li
+                  class="border rounded-full hover:bg-red-600 hover:text-white hover:border-white py-1 px-5 border-red-600 text-red-600"
+                >
+                  filter3
+                </li>
+              </ul>
+            </div>
+            <div>
+              <button
+                class="border-white rounded-full px-5 py-1 bg-red-600 text-white hover:bg-red-400 hover:text-white"
+              >
+                New Member
+              </button>
+            </div>
+          </div>
+          <div class="pt-10 px-10">
+            <ul>
+              <li>
+                <div
+                  class="flex border-b justify-between items-center px-10 py-5"
+                >
+                  <div class="flex gap-10">
+                    <div>logo</div>
+                    <div>nom et prénom</div>
+                    <div>date</div>
+                    <div>status</div>
+                  </div>
+                  <button>arrow</button>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="flex border-b justify-between items-center px-10 py-5"
+                >
+                  <div class="flex gap-10">
+                    <div>logo</div>
+                    <div>nom et prénom</div>
+                    <div>date</div>
+                    <div>status</div>
+                  </div>
+                  <button>arrow</button>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="flex border-b justify-between items-center px-10 py-5"
+                >
+                  <div class="flex gap-10">
+                    <div>logo</div>
+                    <div>nom et prénom</div>
+                    <div>date</div>
+                    <div>status</div>
+                  </div>
+                  <button>arrow</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
