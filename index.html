@@ -12,14 +12,34 @@
         theme: {
           extend: {},
         },
-      }
+      };
     </script>
     <title>Login Page</title>
   </head>
   <body class="w-screen overflow-hidden">
     <main
-      class="flex flex-col-reverse w-screen lg:flex-row h-screen lg:overflow-hidden"
+      class="flex flex-col w-screen lg:flex-row-reverse h-screen lg:overflow-hidden"
     >
+      <div class="absolute top-6 left-6 z-50">
+        <h1 class="text-3xl lg:text-8xl text-red-600">BNI</h1>
+        <p class="text-white text-2xl lg:text-4xl">Talent</p>
+      </div>
+      <section class="w-screen lg:w-[70%] relative">
+        <img
+          src="./assets/man-593333_1920.jpg"
+          alt="picture"
+          class="object-cover h-full lg:h-full w-full brightness-50"
+        />
+
+        <div class="absolute w-full bottom-7 md:bottom-[10vh]">
+          <p
+            class="text-white text-sm text-center ml-0 md:ml-14 md:text-left lg:text-5xl text-bold"
+          >
+            Bni le leader mondiale du réseautage
+          </p>
+        </div>
+      </section>
+
       <section
         class="w-screen px-8 pt-[50px] lg:w-[30%] lg:px-[5%] lg:pt-[10%]"
       >
@@ -65,25 +85,6 @@
         <p class="absolute bottom-0 pb-5 text-left text-red-600">
           © 2023 Studio60
         </p>
-      </section>
-
-      <section class="w-screen lg:w-[70%]">
-        <img
-          src="./assets/man-593333_1920.jpg"
-          alt="picture"
-          class="relative top-0 object-cover h-[203px] lg:h-screen w-screen brightness-50"
-        />
-        <div class="relativetop-0 flex flex-col p-5 lg:p-[50px] lg:h-screen">
-          <div class="absolute top-10">
-            <h1 class="text-3xl lg:text-8xl text-red-600">BNI</h1>
-            <p class="text-white text-2xl lg:text-4xl">Talent</p>
-          </div>
-          <div class="absolute w-full bottom-10">
-            <p class="text-white text-xl lg:text-5xl text-bold">
-              Bni le leader mondiale du réseautage
-            </p>
-          </div>
-        </div>
       </section>
     </main>
   </body>
