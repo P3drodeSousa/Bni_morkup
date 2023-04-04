@@ -24,7 +24,8 @@
         <h1 class="text-3xl lg:text-8xl text-red-600">BNI</h1>
         <p class="text-white text-2xl lg:text-4xl">Talent</p>
       </div>
-      <section class="w-screen lg:w-[70%] relative">
+
+      <section class="w-screen lg:w-[60%] relative">
         <img
           src="./assets/man-593333_1920.jpg"
           alt="picture"
@@ -40,21 +41,21 @@
         </div>
       </section>
 
-      <section
-        class="w-screen px-8 pt-[50px] lg:w-[30%] lg:px-[5%] lg:pt-[10%]"
-      >
-        <h2 class="text-3xl text-center lg:text-left text-bold">
-          <span class="text-red-600">Login</span>
-          to continue.
-        </h2>
+      <section class="w-screen h-full grid place-items-center lg:w-[40%]">
         <form
           action="login"
           method="post"
-          class="flex flex-col pt-4 max-w-[385px]"
+          class="flex flex-col pt-4 w-full max-w-[350px]"
         >
+          <h2 class="text-3xl text-center lg:text-left text-bold mb-10">
+            <span class="text-red-600 font-bold">Login</span>
+            to continue.
+          </h2>
           <!-- form max w 375-->
-          <div class="flex flex-col placeholder:text-grey-200mt-5">
-            <label for="email" class="text-center lg:text-left">Email</label>
+          <div class="flex flex-col placeholder:text-grey-200">
+            <label for="email" class="text-center lg:text-left mb-2"
+              >Email</label
+            >
             <input
               type="email"
               name="email"
@@ -63,8 +64,9 @@
               class="border rounded-full lg:rounded-lg border-red-600 shadow shadow-red-600/50 pt-2"
             />
           </div>
+
           <div class="flex flex-col mt-5">
-            <label for="password" class="text-center lg:text-left"
+            <label for="password" class="text-center lg:text-left mb-2"
               >Password</label
             >
             <input
@@ -75,14 +77,15 @@
             />
             <a href="#" class="text-right pt-2">Forgot Password ?</a>
           </div>
+
           <button
             type="submit"
-            class="rounded-full lg:rounded-lg py-2 px-5 bg-red-600 text-white mt-5 shadow shadow-red-600/50"
+            class="rounded-full lg:rounded-lg py-2 px-5 bg-red-600 text-white mt-8 shadow shadow-red-600/50"
           >
             Login
           </button>
         </form>
-        <p class="absolute bottom-0 pb-5 text-left text-red-600">
+        <p class="absolute bottom-0 left-5 pb-5 text-left text-red-600">
           © 2023 Studio60
         </p>
       </section>
