@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="./../icon/fontawesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.js"
+      integrity="sha512-0hV9FhQc44B5NIfBhQFNBTXrrasLwG6SVxbRiaO7g6962sZV/As4btFdLxXn+brwH7feEg3+AoyQxZQaArEjVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -19,21 +26,37 @@
   <body>
     <main class="flex h-screen">
       <section class="w-[15%] border">
-        <div class="px-5 py-5 flex-col flex gap-10">
-          <div>
+        <div class="px-10 py-10 grid gap-5 grid-rows-9">
+          <div class="row-span-2">
             <h1 class="text-red-600 text-5xl">BNI</h1>
             <p class="text-2xl">Talent</p>
           </div>
-          <div>
+          <div class="row-span-5">
             <ul>
-              <li>Member</li>
-              <li>Bill</li>
+              <li
+                class="border border-white rounded-lg hover:bg-slate-300 text-center"
+              >
+                Member
+              </li>
+              <li
+                class="border border-white rounded-lg hover:bg-slate-300 text-center"
+              >
+                Bill
+              </li>
             </ul>
           </div>
-          <div>
+          <div class="row-span-2 absolute bottom-10">
             <ul>
-              <li>Settings</li>
-              <li>Sign Out</li>
+              <li
+                class="border border-white px-5 rounded-lg hover:bg-slate-300"
+              >
+                Settings
+              </li>
+              <li
+                class="border border-white px-5 rounded-lg hover:bg-slate-300"
+              >
+                Sign Out
+              </li>
             </ul>
           </div>
         </div>
@@ -120,6 +143,7 @@
                     <div>nom de l'entreprise</div>
                   </div>
                   <button>arrow</button>
+                  <i data-feather="arrow"></i>
                 </div>
               </li>
             </ul>
